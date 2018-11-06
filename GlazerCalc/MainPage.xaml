@@ -6,9 +6,24 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="665.6" Height="600">
 
-    <Grid>
+    <Grid KeyUp="checkInput" Margin="10,0,0,0">
+        <Button x:Name="calcBtn" Content="Calculate" HorizontalAlignment="Left" VerticalAlignment="Top" Height="51" Width="222" RenderTransformOrigin="0.499,0.459" Margin="249,335,0,0" Click="calcBtn_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="120,79,0,0"  Text="Enter the Height: " VerticalAlignment="Top" Width="167" BorderThickness="0" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="120,145,0,0"  Text="Enter the Width: " VerticalAlignment="Top" Width="167" BorderThickness="0" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="120,216,0,0"  Text="Choose the Tint Color: " VerticalAlignment="Top" Width="212" BorderThickness="0" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="heightBox" HorizontalAlignment="Left" Height="37" Margin="371,79,0,0"  VerticalAlignment="Top" Width="167" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="widthBox" HorizontalAlignment="Left" Height="37" Margin="371,145,0,0" VerticalAlignment="Top" Width="167" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" InputScope="Number"/>
+        <RadioButton GroupName="color" Name="black" Content="Black" HorizontalAlignment="Left" Margin="371,216,0,0" VerticalAlignment="Top"/>
+        <RadioButton GroupName="color" Name="blue" Content="Blue" HorizontalAlignment="Left" Margin="371,251,0,0" VerticalAlignment="Top"/>
+        <RadioButton GroupName="color" Name="brown" Content="Brown" HorizontalAlignment="Left" Margin="371,285,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="120,412,0,0"  Text="Area: " VerticalAlignment="Top" Width="68" BorderThickness="0" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="120,474,0,0"  Text="Perimeter: " VerticalAlignment="Top" Width="106" BorderThickness="0" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="areaBox" HorizontalAlignment="Left" Height="37" Margin="371,412,0,0" VerticalAlignment="Top" Width="167" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" IsReadOnly="True"/>
+        <TextBox x:Name="perimeterBox"  HorizontalAlignment="Left" Height="37" Margin="371,474,0,0" VerticalAlignment="Top" Width="167" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="120,535,0,0"  Text="Color: " VerticalAlignment="Top" Width="106" BorderThickness="0" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="colorBox"  HorizontalAlignment="Left" Height="37" Margin="371,535,0,0" VerticalAlignment="Top" Width="167" FontSize="20" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" IsReadOnly="True"/>
 
     </Grid>
 </Page>
